@@ -30,12 +30,23 @@ public class PracticeArrays : MonoBehaviour
         Debug.Log("Element 0 von array2 hat den Wert: " + array2[array2.Length - 1]);
         Debug.Log("Element 0 von array3 hat den Wert: " + array3[array3.Length - 1]);
         Debug.Log("Element 0 von array4 hat den Wert: " + array4[array4.Length - 1]);
-        Debug.Log("Name des ersten GameObjects: " + arrayColoredImagesRed[arrayColoredImagesRed.Length - 1].name); 
+        Debug.Log("Name des ersten GameObjects: " + arrayColoredImagesRed[arrayColoredImagesRed.Length - 1].name);
+
+        PrintElements(array4);
     }
 
     // Update is called once per frame
     void Update()
     {
+        
+    }
+
+    public void PrintElements(string[] stringArray)
+    {
+        for (int i = 0; i < x.Length; i++)
+        {
+            Debug.Log("Element Number: " + i + "hat den Wert" + x[i])
+        }
         
     }
 }
